@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
-      <div className="container-fluid my-1">
+      <div className="container-fluid mt-1">
         <Mainpage/>
       </div>
 
