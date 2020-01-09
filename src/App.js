@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Link, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
 import Mainpage from './components/Mainpage';
@@ -9,8 +9,8 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <div className="container-fluid mt-1">
+      <Navbar />
+      <div className="container-fluid p-0 m-0">
         <Router>
 
           <Route exact path={'/'} component={Mainpage}></Route>

@@ -1,4 +1,4 @@
-html, body{height:100%;}
+@import url('https://fonts.googleapis.com/css?family=Allan');
 /* Colors used in the app */
 /* Background- Peach-Yellow: #f7e3af */
 /* Main text- Jet: #32292f */
@@ -46,6 +46,26 @@ hr {
 
 footer {
   height: 48px;
+}
+
+.cloud-text {
+  font-size: 10em;
+  font-family: 'Allan';
+  color: #f7e3af;
+}
+
+.btn-primary {
+  background-color: #575366;
+}
+
+.btn-secondary {
+  background-color: #f7e3af;
+  color: #533745;
+}
+
+.btn-secondary:hover {
+  cursor: pointer;
+  background-color: #995d81;
 }
 
 /* Smartphones (portrait) ----------- */
