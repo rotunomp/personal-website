@@ -22,12 +22,20 @@ nav {
   height: 80%;
 }
 
-.h1 {
-  color: #32292f;
+.h1, .h2 {
+  color: #995d81;
+}
+
+.h3, .h4, .h5 {
+  color: #575366
 }
 
 .display-1 {
   color: #995d81;
+}
+
+.display-2 {
+  color: #575366;
 }
 
 .text-secondary {
@@ -53,8 +61,16 @@ footer {
   color: #f7e3af;
 }
 
-.btn-primary {
-  background-color: #575366;
+.btn-outline-primary {
+  border-color: #575366;
+  border-width: thin;
+  color: #995d81;
+}
+
+.btn-outline-primary:hover {
+  border-color: #995d81;
+  background-color: #995d81;
+  color: white;
 }
 
 .btn-secondary {
@@ -67,10 +83,19 @@ footer {
   background-color: #995d81;
 }
 
+.divider {
+  height: 4em;
+}
+
+
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width : 576px) {
   .display-1 {
     font-size: 6em;
+  }
+
+  .display-2 {
+    font-size: 5em;
   }
 
   .text-secondary {
@@ -89,6 +114,10 @@ footer {
     font-size: 7em;
   }
 
+  .display-2 {
+    font-size: 6em;
+  }
+
   .text-secondary {
     font-size: 1.1em;
   }
@@ -105,16 +134,16 @@ footer {
     font-size: 7em;
   }
 
+  .display-2 {
+    font-size: 6em;
+  }
+
   .text-secondary {
     font-size: 1.1em;
   }
 
   .cloud-text {
     font-size: 8em;
-  }
-
-  .divider {
-    height: 4em;
   }
 
 }
@@ -125,6 +154,10 @@ footer {
     font-size: 8em;
   }
 
+  .display-2 {
+    font-size: 7em;
+  }
+
   .text-secondary {
     font-size: 1.2em;
   }
@@ -133,12 +166,20 @@ footer {
     font-size: 9em;
   }
 
+  .divider-lg {
+    height: 20px;
+  }
+
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .display-1 {
     font-size: 8em;
+  }
+
+  .display-2 {
+    font-size: 7em;
   }
 
   .text-secondary {

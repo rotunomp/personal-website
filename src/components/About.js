@@ -9,6 +9,10 @@ import Korea from '../resources/Korea.jpg'
 import Petrified from '../resources/Petrified.png'
 import Sands from '../resources/Sands.jpg'
 import Cloud from '../resources/Wordcloud.png'
+import githubLogo from "../resources/GitHub-Mark-32px.png"
+import emailIcon from "../resources/email-icon.png"
+import resumeIcon from "../resources/document-32.png"
+
 
 import "animate.css/animate.min.css";
 
@@ -87,16 +91,16 @@ class About extends React.Component {
                 </div>
 
                 <section id={'carousel'}></section>
-                <div className={'row my-4 py-4'}></div>
-                <div className={'row mt-4 py-4'}>
+                <div className={'row divider'}></div>
+                <div className={'row'}>
                     <div className={'col'}></div>
                     <div className={'col-xs-12 col-lg-9'} id={'image-carousel'}>
                         <Carousel
                             fade={'true'}
                             style={{
                                 borderStyle: 'groove',
-                                border: '5px solid black',
-                                borderColor: 'black'
+                                border: '10px solid',
+                                borderColor: '#533745'
                             }}
                         >
                             <Carousel.Item>
@@ -138,6 +142,104 @@ class About extends React.Component {
                     </div>
                     <div className={'col'}></div>
                 </div>
+
+
+                <div className={'row divider'}></div>
+
+                <div className={'row'} id={'personal-info'}>
+                    <div className={'col-xs-1 col-lg-2'}></div>
+
+                    <div className={'col-xs-10 col-lg-4 mx-4'}>
+                        <ScrollAnimation
+                            animateIn={'fadeInDown'}
+                            duration={1}
+                            delay={0}
+                            animateOnce={true}
+                            offset={100}
+                        >
+                            <div className={'h1'}>
+                                Age
+                            </div>
+                            <hr></hr>
+                            <div className={'h3'}>22</div>
+                        </ScrollAnimation>
+                    </div>
+                    <div className={'divider'}></div>
+                    <div className={'col-xs-10 col-lg-4 mx-4'}>
+                        <ScrollAnimation
+                            animateIn={'fadeInDown'}
+                            duration={1}
+                            delay={0}
+                            animateOnce={true}
+                            offset={100}
+                        >
+                            <div className={'h1'}>
+                                Height
+                            </div>
+                            <hr></hr>
+                            <div className={'h3'}>6'1"</div>
+                        </ScrollAnimation>
+                    </div>
+                    <div className={'divider'}></div>
+                    <div className={'col-xs-1 col-lg-2'}></div>
+                </div>
+
+                <div className={'row divider-lg'}></div>
+
+                <div className={'row'} id={'personal-info2'}>
+                    <div className={'col-xs-1 col-lg-2'}></div>
+                    <div className={'col-xs-10 col-lg-4 mx-4'}>
+                        <ScrollAnimation
+                            animateIn={'fadeInDown'}
+                            duration={1}
+                            delay={0}
+                            animateOnce={true}
+                            offset={100}
+                        >
+                            <div className={'h1'}>
+                                Favorite Color
+                            </div>
+                            <hr></hr>
+                            <div className={'h3'}>Purple</div>
+                        </ScrollAnimation>
+                    </div>
+                    <div className={'divider'}></div>
+
+                    <div className={'col-xs-10 col-lg-4 mx-4'}>
+                        <ScrollAnimation
+                            animateIn={'fadeInDown'}
+                            duration={1}
+                            delay={0}
+                            animateOnce={true}
+                            offset={100}
+                        >
+                            <div className={'h1'}>
+                                Favorite Dish
+                            </div>
+                            <hr></hr>
+                            <div className={'h3'}>Gnocchi</div>
+                        </ScrollAnimation>
+                    </div>
+                    <div className={'divider'}></div>
+                    <div className={'col-xs-1 col-lg-2'}></div>
+                </div>
+
+
+                <div className={'divider'}></div>
+                <hr></hr>
+                <footer className="d-flex justify-content-center align-items-center">
+                    <div className="">
+                        <a href="https://github.com/rotunomp" className="mx-1">
+                            <img src={githubLogo}></img>
+                        </a>
+                        <a href="mailto:michaelprotuno@gmail.com" className="mx-1">
+                            <img src={emailIcon} width="32" height="36"></img>
+                        </a>
+                        <a href="https://docs.google.com/document/d/1g6f8RIC1J7QcsU68JoeWHc8QJbh1OdT5MbNsuK-Aupo/edit?usp=sharing" className="mx-1">
+                            <img src={resumeIcon}></img>
+                        </a>
+                    </div>
+                </footer>
 
             </div>
 
