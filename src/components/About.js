@@ -50,6 +50,7 @@ class About extends React.Component {
                             duration={1.5}
                             delay={1000}
                             animateOnce={true}
+                            offset={-1500}
                         >
                             Learn a few
                         </ScrollAnimation>
@@ -62,6 +63,7 @@ class About extends React.Component {
                             duration={1.5}
                             delay={2000}
                             animateOnce={true}
+                            offset={-1500}
                         >
                             things about me
                         </ScrollAnimation>
@@ -76,7 +78,7 @@ class About extends React.Component {
                             duration={1.5}
                             delay={3000}
                             animateOnce={true}
-                            offset={0}
+                            offset={-1500}
                         >
                             <AnchorLink className={'btn btn-secondary btn-lg my-4'} role={'button'} href={'#carousel'}>Let's go!</AnchorLink>
                         </ScrollAnimation>
