@@ -42,8 +42,8 @@ class About extends React.Component {
                 >
                     <section id={'cloud'}></section>
 
-                    <div className={'col col-lg-2'}></div>
-                    <div className={'col-xs-11 col-lg-8'}>
+                    <div className={'col-xs-1 col-lg-2'}></div>
+                    <div className={'col-xs-10 col-lg-8'}>
                         <ScrollAnimation
                             animateIn={'fadeInDown'}
                             className={'cloud-text float-left'}
@@ -54,9 +54,7 @@ class About extends React.Component {
                             Learn a few
                         </ScrollAnimation>
 
-                        <div className={'row m-4 p-4'}></div>
-                        <div className={'row m-4 p-4'}></div>
-                        <div className={'row m-4 p-4'}></div>
+                        <div className={'row divider'}></div>
 
                         <ScrollAnimation
                             animateIn={'fadeInDown'}
@@ -70,18 +68,18 @@ class About extends React.Component {
 
 
                     </div>
-                    <div className={'col col-lg-2'}></div>
+                    <div className={'col-xs-1 col-lg-2'}></div>
 
                     <div className={'col-xs-12 align-self-end mt-4'}>
-                    <ScrollAnimation
-                        animateIn={'fadeIn'}
-                        duration={1.5}
-                        delay={3000}
-                        animateOnce={true}
-                        offset={0}
-                    >
-                        <AnchorLink className={'btn btn-secondary btn-lg my-4'} role={'button'} href={'#carousel'}>Let's go!</AnchorLink>
-                    </ScrollAnimation>
+                        <ScrollAnimation
+                            animateIn={'fadeIn'}
+                            duration={1.5}
+                            delay={3000}
+                            animateOnce={true}
+                            offset={0}
+                        >
+                            <AnchorLink className={'btn btn-secondary btn-lg my-4'} role={'button'} href={'#carousel'}>Let's go!</AnchorLink>
+                        </ScrollAnimation>
                     </div>
 
                 </div>

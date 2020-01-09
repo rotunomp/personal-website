@@ -49,7 +49,6 @@ footer {
 }
 
 .cloud-text {
-  font-size: 10em;
   font-family: 'Allan';
   color: #f7e3af;
 }
@@ -77,6 +76,11 @@ footer {
   .text-secondary {
     font-size: 1.1em;
   }
+
+  .cloud-text {
+    font-size: 5em;
+  }
+
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -87,6 +91,10 @@ footer {
 
   .text-secondary {
     font-size: 1.1em;
+  }
+
+  .cloud-text {
+    font-size: 6em;
   }
 
 }
@@ -101,6 +109,14 @@ footer {
     font-size: 1.1em;
   }
 
+  .cloud-text {
+    font-size: 8em;
+  }
+
+  .divider {
+    height: 4em;
+  }
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -113,6 +129,10 @@ footer {
     font-size: 1.2em;
   }
 
+  .cloud-text {
+    font-size: 9em;
+  }
+
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -123,6 +143,10 @@ footer {
 
   .text-secondary {
     font-size: 1.2em;
+  }
+
+  .cloud-text {
+    font-size: 10em;
   }
 
 }
