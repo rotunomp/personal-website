@@ -52,7 +52,7 @@ class About extends React.Component {
                             animateIn={'fadeInDown'}
                             className={'cloud-text float-left'}
                             duration={1.5}
-                            delay={1000}
+                            delay={500}
                             animateOnce={true}
                             offset={-1500}
                         >
@@ -65,7 +65,7 @@ class About extends React.Component {
                             animateIn={'fadeInDown'}
                             className={'cloud-text float-right'}
                             duration={1.5}
-                            delay={2000}
+                            delay={1000}
                             animateOnce={true}
                             offset={-1500}
                         >
@@ -80,7 +80,7 @@ class About extends React.Component {
                         <ScrollAnimation
                             animateIn={'fadeIn'}
                             duration={1.5}
-                            delay={3000}
+                            delay={2000}
                             animateOnce={true}
                             offset={-1500}
                         >
@@ -174,10 +174,10 @@ class About extends React.Component {
                             offset={100}
                         >
                             <div className={'h1'}>
-                                Height
+                                Favorite Band
                             </div>
                             <hr></hr>
-                            <div className={'h3'}>6'1"</div>
+                            <div className={'h3'}>The Beatles</div>
                         </ScrollAnimation>
                     </div>
                     <div className={'divider'}></div>
@@ -226,21 +226,6 @@ class About extends React.Component {
 
 
                 <div className={'divider'}></div>
-                <hr></hr>
-                <footer className="d-flex justify-content-center align-items-center">
-                    <div className="">
-                        <a href="https://github.com/rotunomp" className="mx-1">
-                            <img src={githubLogo}></img>
-                        </a>
-                        <a href="mailto:michaelprotuno@gmail.com" className="mx-1">
-                            <img src={emailIcon} width="32" height="36"></img>
-                        </a>
-                        <a href="https://docs.google.com/document/d/1g6f8RIC1J7QcsU68JoeWHc8QJbh1OdT5MbNsuK-Aupo/edit?usp=sharing" className="mx-1">
-                            <img src={resumeIcon}></img>
-                        </a>
-                    </div>
-                </footer>
-
             </div>
 
         );

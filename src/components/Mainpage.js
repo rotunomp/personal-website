@@ -2,10 +2,6 @@ import React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import {Link} from 'react-router-dom';
 
-import githubLogo from "../resources/GitHub-Mark-32px.png"
-import emailIcon from "../resources/email-icon.png"
-import resumeIcon from "../resources/document-32.png"
-
 class Mainpage extends React.Component {
 
     constructor() {
@@ -51,25 +47,10 @@ class Mainpage extends React.Component {
                             offset={-1500}
                         >
                             <Link className={'btn btn-outline-primary btn-lg mx-2'} to={'/about'}>About me</Link>
-                            <Link className={'btn btn-outline-primary btn-lg mx-2'}>Projects</Link>
+                            <Link className={'btn btn-outline-primary btn-lg mx-2'} to={'/projects'}>Projects</Link>
                         </ScrollAnimation>
                     </div>
                 </header>
-
-                <hr></hr>
-                <footer className="d-flex justify-content-center align-items-center">
-                    <div className="">
-                        <a href="https://github.com/rotunomp" className="mx-1">
-                            <img src={githubLogo}></img>
-                        </a>
-                        <a href="mailto:michaelprotuno@gmail.com" className="mx-1">
-                            <img src={emailIcon} width="32" height="36"></img>
-                        </a>
-                        <a href="https://docs.google.com/document/d/1g6f8RIC1J7QcsU68JoeWHc8QJbh1OdT5MbNsuK-Aupo/edit?usp=sharing" className="mx-1">
-                            <img src={resumeIcon}></img>
-                        </a>
-                    </div>
-                </footer>
             </div>
 
         );

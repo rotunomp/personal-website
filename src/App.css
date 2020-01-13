@@ -87,6 +87,40 @@ footer {
   height: 4em;
 }
 
+.card {
+  background-color: #f7e3af;
+  border-color: #533745;
+  border-width: thick;
+}
+
+.card-footer {
+  background-color: #533745;
+  color: #f7e3af;
+}
+
+.text-small-card {
+  color: #995d81;
+  font-weight: 500;
+}
+
+.card {
+  transition: transform .4s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  opacity: 0.23;
+  filter: alpha(opacity=20); /* For IE8 and earlier */
+}
+
+/* .card-img-top:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+} */
+
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width : 576px) {
@@ -104,6 +138,10 @@ footer {
 
   .cloud-text {
     font-size: 5em;
+  }
+
+  .text-small-card {
+    font-size: xx-large;
   }
 
 }
@@ -126,6 +164,10 @@ footer {
     font-size: 6em;
   }
 
+  .text-small-card {
+    font-size: x-large;
+  }
+
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -146,6 +188,10 @@ footer {
     font-size: 8em;
   }
 
+  .text-small-card {
+    font-size: x-large;
+  }
+  
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -168,6 +214,10 @@ footer {
 
   .divider-lg {
     height: 20px;
+  }
+
+  .text-small-card {
+    font-size: x-large;
   }
 
 }
