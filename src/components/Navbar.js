@@ -13,7 +13,7 @@ function Navbar() {
                     <a className="nav-link" href="/about">About <span className="sr-only">(current)</span></a>
                 </li>
                 <li className="nav-item active">
-                    <a className="nav-link" href="/">Projects <span className="sr-only">(current)</span></a>
+                    <a className="nav-link" href="/projects">Projects <span className="sr-only">(current)</span></a>
                 </li>
                 </ul>
             </div>
