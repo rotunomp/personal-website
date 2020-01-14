@@ -9,10 +9,7 @@ import Korea from '../resources/Korea.jpg'
 import Petrified from '../resources/Petrified.png'
 import Sands from '../resources/Sands.jpg'
 import Cloud from '../resources/Wordcloud.png'
-import githubLogo from "../resources/GitHub-Mark-32px.png"
-import emailIcon from "../resources/email-icon.png"
-import resumeIcon from "../resources/document-32.png"
-
+import DownArrow from '../resources/down-arrow.png'
 
 import "animate.css/animate.min.css";
 
@@ -24,10 +21,9 @@ class About extends React.Component {
 
         // Get the height of the screen so we can have screen-height elements!
         const viewportHeight = window.innerHeight;
-        this.state = { screenHeight: viewportHeight };
-
-        // Set the variables which handle animations
-
+        this.state = { 
+            screenHeight: viewportHeight
+         };
     }
 
     render() {
@@ -47,14 +43,16 @@ class About extends React.Component {
                     <section id={'cloud'}></section>
 
                     <div className={'col-xs-1 col-lg-2'}></div>
-                    <div className={'col-xs-10 col-lg-8'}>
+                    <div className={'col-xs-10 col-lg-8 mx-1 mx-lg-0'}>
                         <ScrollAnimation
                             animateIn={'fadeInDown'}
                             className={'cloud-text float-left'}
                             duration={1.5}
                             delay={500}
                             animateOnce={true}
-                            offset={-1500}
+                            offset={0
+                            }
+                            scrollableParentSelector={'.About'}
                         >
                             Learn a few
                         </ScrollAnimation>
@@ -67,7 +65,8 @@ class About extends React.Component {
                             duration={1.5}
                             delay={1000}
                             animateOnce={true}
-                            offset={-1500}
+                            offset={0}
+                            scrollableParentSelector={'.About'}
                         >
                             things about me
                         </ScrollAnimation>
@@ -78,13 +77,16 @@ class About extends React.Component {
 
                     <div className={'col-xs-12 align-self-end mt-4'}>
                         <ScrollAnimation
-                            animateIn={'fadeIn'}
+                            animateIn={'bounce'}
                             duration={1.5}
                             delay={2000}
-                            animateOnce={true}
-                            offset={-1500}
+                            initiallyVisible={true}
+                            offset={0}
+                            scrollableParentSelector={'.About'}
                         >
-                            <AnchorLink className={'btn btn-secondary btn-lg my-4'} role={'button'} href={'#carousel'}>Let's go!</AnchorLink>
+                            <AnchorLink className={'my-4'} role={'button'} href={'#carousel'}>
+                                <img src={DownArrow} className={'down-arrow'}></img>
+                            </AnchorLink>
                         </ScrollAnimation>
                     </div>
 
@@ -92,9 +94,20 @@ class About extends React.Component {
 
                 <section id={'carousel'}></section>
                 <div className={'row divider'}></div>
+                <div className={'row divider'}></div>
                 <div className={'row'}>
-                    <div className={'col'}></div>
-                    <div className={'col-xs-12 col-lg-9'} id={'image-carousel'}>
+                    <div className={'col-12 col-lg-4 mx-2 mx-lg-0 ml-lg-4 pl-lg-4 h1'}>
+                        Bio
+                        <hr></hr>
+                        <p className={'mr-3'}>
+                        Hi, my name is Michael Rotuno. I'm a Software Engineer taking my first steps in the industry. I graduated from Miami University (Ohio) in 2019, and since then I've done projects exploring many routes in the world of programming. These projects include Botify, a service which notifys about music releases, which is by far my favorite thing that I've made. Working on theses projects has solidified what I want in my career: <strong>variety, challenge, and endless learning.</strong>
+                        </p>
+            
+                        <p className={'mr-3'}>
+                        Outside of work, I spend time cooking and listening to music. There's nothing more relaxing to me than making something tasty while I listen to my favorite albums. I like to spend time with friends playing video games and going on outdoors adventures. 
+                        </p>
+                    </div>
+                    <div className={'col-12 col-lg-7 ml-lg-4 pl-lg-4'} id={'image-carousel'}>
                         <Carousel
                             fade={'true'}
                             style={{
@@ -140,7 +153,6 @@ class About extends React.Component {
                             </Carousel.Item>
                         </Carousel>
                     </div>
-                    <div className={'col'}></div>
                 </div>
 
 
@@ -155,7 +167,7 @@ class About extends React.Component {
                             duration={1}
                             delay={0}
                             animateOnce={true}
-                            offset={100}
+                            offset={200}
                         >
                             <div className={'h1'}>
                                 Age
@@ -171,7 +183,7 @@ class About extends React.Component {
                             duration={1}
                             delay={0}
                             animateOnce={true}
-                            offset={100}
+                            offset={200}
                         >
                             <div className={'h1'}>
                                 Favorite Band
@@ -194,7 +206,7 @@ class About extends React.Component {
                             duration={1}
                             delay={0}
                             animateOnce={true}
-                            offset={100}
+                            offset={200}
                         >
                             <div className={'h1'}>
                                 Favorite Color
@@ -211,7 +223,7 @@ class About extends React.Component {
                             duration={1}
                             delay={0}
                             animateOnce={true}
-                            offset={100}
+                            offset={200}
                         >
                             <div className={'h1'}>
                                 Favorite Dish

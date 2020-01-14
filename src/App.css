@@ -56,6 +56,19 @@ footer {
   height: 48px;
 }
 
+a {
+  outline: 0;
+}
+
+p {
+  color: #575366;
+  font-size: large;
+}
+
+strong {
+  color: #995d81;
+}
+
 .cloud-text {
   font-family: 'Allan';
   color: #f7e3af;
@@ -81,6 +94,13 @@ footer {
 .btn-secondary:hover {
   cursor: pointer;
   background-color: #995d81;
+}
+
+.down-arrow {
+  width: 2em;
+  height: 2em;
+  filter: invert();
+  filter: contrast(1%)
 }
 
 .divider {
@@ -192,6 +212,10 @@ footer {
     font-size: x-large;
   }
   
+  .divider {
+    height: 4em;
+  }
+  
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -219,6 +243,11 @@ footer {
   .text-small-card {
     font-size: x-large;
   }
+
+  .divider {
+    height: 6em;
+  }
+  
 
 }
 
