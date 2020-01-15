@@ -100,7 +100,7 @@ class About extends React.Component {
                         Bio
                         <hr></hr>
                         <p className={'mr-3'}>
-                        Hi, my name is Michael Rotuno. I'm a Software Engineer taking my first steps in the industry. I graduated from Miami University (Ohio) in 2019, and since then I've done projects exploring many routes in the world of programming. These projects include Botify, a service which notifys about music releases, which is by far my favorite thing that I've made. Working on theses projects has solidified what I want in my career: <strong>variety, challenge, and endless learning.</strong>
+                        Hi, my name is Michael Rotuno. I'm a Software Engineer taking my first steps in the industry. I graduated from Miami University (Ohio) in 2019, and since then I've done projects exploring many routes in the world of programming. My favorite one so far is Botify, a service which notifys users about music releases. Working on theses projects has solidified what I want in my career: <strong>variety, challenge, and endless learning.</strong>
                         </p>
             
                         <p className={'mr-3'}>
