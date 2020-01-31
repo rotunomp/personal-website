@@ -35,7 +35,7 @@ function App() {
                 <a href="mailto:michaelprotuno@gmail.com" className="mx-1" target="_blank">
                     <img src={emailIcon} width="32" height="36"></img>
                 </a>
-                <a href="https://docs.google.com/document/d/1g6f8RIC1J7QcsU68JoeWHc8QJbh1OdT5MbNsuK-Aupo/edit?usp=sharing" className="mx-1" target="_blank">
+                <a href="https://docs.google.com/document/d/18h4GvC0FljTtjrzpG0RZRxyFqXrtZVVi8o4VvVcFoBg/edit?usp=sharing" className="mx-1" target="_blank">
                     <img src={resumeIcon}></img>
                 </a>
             </div>
