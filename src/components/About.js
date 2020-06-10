@@ -173,7 +173,7 @@ class About extends React.Component {
                                 Age
                             </div>
                             <hr></hr>
-                            <div className={'h3'}>22</div>
+                            <div className={'h3'}>23</div>
                         </ScrollAnimation>
                     </div>
                     <div className={'divider'}></div>
